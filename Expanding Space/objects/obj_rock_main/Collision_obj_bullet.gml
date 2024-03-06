@@ -72,7 +72,7 @@ else
 	instance_destroy();
 }
 //spawn next tier rocks when at correct score
-if (global.points > 100)
+if (global.points > 500)
 {
 	instance_create_layer(_ranx,_rany,"Instances",obj_rock_main_V2)
 }

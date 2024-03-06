@@ -31,6 +31,7 @@
     {"name":"spr_rock_main_V2","order":10,"path":"sprites/spr_rock_main_V2/spr_rock_main_V2.yy",},
     {"name":"obj_button_parent","order":4,"path":"objects/obj_button_parent/obj_button_parent.yy",},
     {"name":"obj_game","order":3,"path":"objects/obj_game/obj_game.yy",},
+    {"name":"spr_rock_broken_V2","order":11,"path":"sprites/spr_rock_broken_V2/spr_rock_broken_V2.yy",},
     {"name":"obj_powerup_ghost","order":11,"path":"objects/obj_powerup_ghost/obj_powerup_ghost.yy",},
     {"name":"snd_menu","order":1,"path":"sounds/snd_menu/snd_menu.yy",},
     {"name":"obj_button_help","order":7,"path":"objects/obj_button_help/obj_button_help.yy",},

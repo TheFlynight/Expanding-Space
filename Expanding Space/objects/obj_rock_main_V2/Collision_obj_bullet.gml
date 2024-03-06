@@ -17,6 +17,10 @@ if sprite_index == spr_rock_main_V2
 {
 	global.points += 100;
 }
+if sprite_index == spr_rock_broken_V2
+{
+	global.points += 200;
+}
 
 ini_write_real("Points", "Current", global.points);
 ini_close();
@@ -31,7 +35,7 @@ direction = random(360);
 // Spawn small rocks if main rock hit
 if sprite_index == spr_rock_main_V2
 {
-	sprite_index = spr_rock_broken;
+	sprite_index = spr_rock_broken_V2;
 	instance_copy(true);
 }
 else

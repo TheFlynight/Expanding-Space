@@ -5,7 +5,7 @@ player_x = instance_nearest(x, y, obj_player).x;
 player_y = instance_nearest(x, y, obj_player).y;
 // Calculate the direction towards the player
 direction = point_direction(x, y, player_x, player_y);
-speed = 2;
+speed = 3;
 image_angle = random(360);
 }
 
