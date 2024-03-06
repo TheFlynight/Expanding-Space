@@ -35,7 +35,7 @@ direction = random(360);
 
 //set random values for rock spawn
 // Define a buffer zone to avoid spawning in the middle
-var buffer = 10; // Adjust this value to control the distance from the edge
+var buffer = 100; // Adjust this value to control the distance from the edge
 
 while (true) 
 {

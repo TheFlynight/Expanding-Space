@@ -1,12 +1,16 @@
 powerup_time = 10;
 
-//Spawn Rocks
+// Define a buffer zone to avoid spawning in the middle
+var _buffer = 1; // Adjust this value to control the distance from the edge
 
+//Spawn Rocks
 while (instance_number(obj_rock_main) < 5)
 {
-    var _ranx = random_range(0, room_width);
-    var _rany = random_range(0, room_height);
+	// Generate new random positions within allowed area (excluding buffer zone)
+	var _ranx = irandom_range(room_width - _buffer * 2, _buffer);
+	var _rany = irandom_range(room_height - _buffer * 2, _buffer);
 
+	
     // Check for collision with existing rocks and itself
     var _rock_coll = instance_place(_ranx, _rany, obj_rock_main);
     var _self_coll = instance_place(_ranx - x, _rany - y, obj_rock_main);
