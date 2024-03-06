@@ -1,5 +1,4 @@
-var _ranx = random_range(0, room_width);
-var _rany = random_range(0, room_height);
+
 
 //check if no powerup is active
 if(obj_game.powerup_time < 0)
@@ -34,17 +33,39 @@ effect_create_above(ef_explosion, x, y, 1, c_white);
 
 direction = random(360);
 
+//set random values for rock spawn
+// Define a buffer zone to avoid spawning in the middle
+var buffer = 10; // Adjust this value to control the distance from the edge
+
+while (true) 
+{
+    // Generate random positions for x and y within the entire screen area
+    var _ranx = irandom_range(room_width, 0);
+    var _rany = irandom_range(room_height, 0);
+
+    // Check if the position is on the edge (top, bottom, left, or right)
+    if (_ranx <= buffer || _ranx >= room_width - buffer - 1 ||
+        _rany <= buffer || _rany >= room_height - buffer - 1) 
+	{
+        // Valid edge position found, break the loop
+        break;
+    }
+}
+
 // Check which version of rock is hit
-// Ensure < 12 rocks at a time
+// If hitting main rock, split rock into 2 broken rocks
 if (sprite_index == spr_rock_main)
 {
 	sprite_index = spr_rock_broken;
 	instance_copy(true);
 }
+// Spawn another main rock if there are less than 
+// x ammount currently and destory current instance
 else if instance_number(obj_rock_main) < 12
 {
 	sprite_index = spr_rock_main;
-	x = -100;
+	x = _ranx;
+	y = _rany;
 }
 else
 {	
