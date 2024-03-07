@@ -46,6 +46,7 @@
     {"name":"spr_powerup_ghost","order":6,"path":"sprites/spr_powerup_ghost/spr_powerup_ghost.yy",},
     {"name":"obj_controls","order":8,"path":"objects/obj_controls/obj_controls.yy",},
     {"name":"spr_rock_small","order":3,"path":"sprites/spr_rock_small/spr_rock_small.yy",},
+    {"name":"snd_death2","order":14,"path":"sounds/snd_death2/snd_death2.yy",},
     {"name":"rm_defeat","order":2,"path":"rooms/rm_defeat/rm_defeat.yy",},
   ],
 }

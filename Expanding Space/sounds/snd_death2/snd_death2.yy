@@ -1,7 +1,7 @@
 {
   "resourceType": "GMSound",
   "resourceVersion": "1.0",
-  "name": "snd_death",
+  "name": "snd_death2",
   "audioGroupId": {
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
@@ -10,14 +10,14 @@
   "bitRate": 128,
   "compression": 0,
   "conversionMode": 0,
-  "duration": 3.868526,
+  "duration": 0.479433,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "Expanding Space",
+    "path": "Expanding Space.yyp",
   },
   "preload": false,
   "sampleRate": 44100,
-  "soundFile": "snd_death.wav",
+  "soundFile": "snd_death2.wav",
   "type": 0,
-  "volume": 0.64,
+  "volume": 1.0,
 }
